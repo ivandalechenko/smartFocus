@@ -1,0 +1,66 @@
+.container {
+    width: 100%;
+    max-width: 1460px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+body {
+    background: #0F1011;
+}
+
+.goldTexture {
+    background-color: #BE945C;
+    background-image: url('/img/general/goldTexture.webp');
+    -webkit-background-clip: text;
+    background-size: 100%;
+    background-clip: text;
+    color: transparent;
+    text-fill-color: transparent;
+}
+
+.textHeader {
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 60px;
+
+    @media(max-width: 900px) {
+        gap: 20px;
+
+        img {
+            width: 50px;
+        }
+    }
+
+    .goldTexture {
+        font-weight: 500;
+        font-size: 72px;
+        background-size: 200%;
+        font-size: 72px;
+        text-align: center;
+
+        @media(max-width: 900px) {
+            font-size: 36px;
+        }
+    }
+}
+
+.app {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.bg {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: -2;
+
+    img {
+        width: 100dvw;
+    }
+}

@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+
+<body id="body">
+  <div class="app">
+    <!-- <div class="bg">
+      <img src="/img/general/bg.png" alt="">
+    </div> -->
+    <div class="header_mob">
+      <div class="container header_mob_container">
+        <div class="header_mob_logo">
+          <img src="/img/general/logo.png" alt="">
+        </div>
+        <div class="mmOpener" id="mmOpener">
+          <img src="/img/general/mobMenuOpener.svg" id="mmOpenerImg" alt="">
+        </div>
+      </div>
+    </div>
+    <header class="header" id="mm">
+      <div class="container">
+        <div class="header_logo">
+          <img src="/img/general/logo.png" alt="">
+        </div>
+        <nav class="header_links">
+          <a href="#" class="header_links_element"><img src="/img/general/goldStar.png" alt="">О нас</a>
+          <a href="#" class="header_links_element"><img src="/img/general/goldStar.png" alt="">Услуги</a>
+          <a href="#" class="header_links_element"><img src="/img/general/goldStar.png" alt="">Кейсы</a>
+          <a href="#" class="header_links_element"><img src="/img/general/goldStar.png" alt="">Контакты</a>
+        </nav>
+        <div class="header_media">
+          <a class="header_media_element">
+            <img src="/img/mediaLogos/fb.png" alt="">
+          </a>
+          <a class="header_media_element">
+            <img src="/img/mediaLogos/ig.png" alt="">
+          </a>
+          <a class="header_media_element">
+            <img src="/img/mediaLogos/tg.png" alt="">
+          </a>
+          <a class="header_media_element">
+            <img src="/img/mediaLogos/li.png" alt="">
+          </a>
+        </div>
+        <div class="header_contacts">
+          <div class="header_contacts_element">
+            <img src="/img/general/goldMail.png" alt="">
+            hello@squareup.com
+          </div>
+          <div class="header_contacts_element">
+            <img src="/img/general/goldPhone.png" alt="">
+            +91 91813 23 2309
+          </div>
+          <div class="header_contacts_element">
+            © 2023 SquareUp. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="usp" id="usp">
+      <div class="container">
+        <div class="usp_content">
+          <div class="usp_content_sliderBlock">
+            <div class="usp_content_sliderBlock_text">
+              <div class="usp_content_sliderBlock_text_header">
+                <div class="usp_content_sliderBlock_text_header_text goldTexture">
+                  СмартФокус
+                </div>
+                <div class="usp_content_sliderBlock_text_header_arrow">
+                  <svg width="39" height="12" viewBox="0 0 39 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.70874 6.45411L37.2061 6.45411M37.2061 6.45411L32.3655 1.89137M37.2061 6.45411L32.3655 11.0168"
+                      stroke="white" stroke-width="1.93622" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <div class="usp_content_sliderBlock_text_content">
+                <div class="usp_content_sliderBlock_text_content_row">
+                  ЭТО
+                </div>
+                <div class="usp_content_sliderBlock_text_content_row goldTexture">
+                  PRO
+                </div>
+              </div>
+            </div>
+            <div class="usp_content_sliderBlock_slider" id="uspSlider">
+              <div class="usp_content_sliderBlock_slider_element">
+                Игры
+              </div>
+              <div class="usp_content_sliderBlock_slider_element">
+                E-Commerce
+              </div>
+              <div class="usp_content_sliderBlock_slider_element selected">
+                Путешествия
+              </div>
+              <div class="usp_content_sliderBlock_slider_element">
+                Финансы
+              </div>
+              <div class="usp_content_sliderBlock_slider_element">
+                Такси
+              </div>
+            </div>
+          </div>
+          <div class="usp_content_textBlock">
+            Мы - эксперты по трафику, собранные вместе, чтобы перевернуть рынок
+            для достижения <span class="goldTexture">наилучших показателей LTV и ROI для наших партнеров.
+              Мы знаем все о трафике,</span> от издателя до приложения и, конечно, как его оптимизировать.
+          </div>
+          <div class="usp_decor">
+            <div class="free_img usp_decor_hand usp_decor_handSkeleton">
+              <svg width="1020" height="984" viewBox="0 0 1020 984" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M76.1537 707.308V59.7444C76.1537 47.1362 85.5423 36.5011 98.0531 34.9374L349.483 3.51217C364.404 1.64723 377.584 13.2819 377.584 28.3192V718.886C377.584 733.144 365.677 744.515 351.434 743.859L100.004 732.281C86.6579 731.667 76.1537 720.668 76.1537 707.308Z"
+                  fill="#6E39B2" />
+                <path
+                  d="M54.1223 342.541C59.3523 340.484 62.1337 341.054 67.6416 341.549C73.1495 342.045 73.1162 342.393 76.1537 342.541V364.352C76.1537 375.258 81.8328 387.432 84.6659 390.625C87.4989 393.818 83.5745 404.569 78.1565 412.933C76.0631 416.944 72.1643 416.772 69.1437 416.898H56.6259C45.9676 416.825 40.9316 415.6 35.0952 409.463C27.9905 401.115 25.4314 395.082 22.5773 382.694C20.5127 371.597 21.1261 365.777 31.0894 357.412L54.1223 342.541Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M19.0723 273.636C40.4691 284.777 53.7285 281.583 76.1537 285.037V228.526L8.05656 231.996C3.79699 231.901 1.54723 235.466 0.545839 239.927C-0.455551 244.389 0.0451541 248.354 1.04656 251.329C2.04797 254.303 8.33917 267.931 19.0723 273.636Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M383.592 282.56C365.543 237.91 358.557 239.778 342.033 209.118C325.509 178.458 346.539 155.084 346.539 155.084C355.052 137.238 383.592 164.083 383.592 164.083L454.193 265.209C483.339 304.52 491.148 327.586 500.259 369.31C506.212 396.574 513.465 407.48 520.788 426.318C529.329 448.289 526.296 447.137 536.31 492.247C546.324 537.358 548.02 543.014 549.829 584.451C566.344 579.387 574.962 580.598 588.885 591.887L1020 942.36L683.52 984C683.52 984 496.253 746.551 488.241 736.637C480.23 726.723 477.716 721.625 479.729 710.364H377.584V382.199L403.12 388.147C407.432 372.082 407.994 362.321 403.12 342.541C396.646 319.68 392.823 306.766 383.592 282.56Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M76.1537 458.043V486.299C75.8474 489.372 77.9361 489.213 78.6572 491.256C80.5277 496.556 81.7596 499.139 79.6586 505.632C77.5577 512.124 76.915 513.908 71.6472 518.521C66.7853 523.326 63.32 523.892 56.1251 521.991L32.5915 515.05C25.8389 512.929 22.0762 511.389 15.5672 505.632C11.9049 500.581 10.1973 497.372 12.0622 486.299C13.6767 479.875 15.524 476.163 20.5744 469.444C25.4707 464.369 29.1318 461.919 42.6058 460.522L76.1537 458.043Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M62.6344 561.152L76.1537 560.161V587.921C76.4816 594.855 78.5241 598.173 83.1637 603.784C85.4433 609.829 84.3529 613.434 79.1579 620.142C74.9575 624.46 71.6762 625.745 62.6344 624.108L33.0922 618.16C27.5662 617.62 25.5534 615.901 25.0808 608.741V595.357C25.292 588.866 26.3564 585.41 29.5872 579.494C37.3479 567.215 44.5684 563.229 62.6344 561.152Z"
+                  fill="#D9D9D9" />
+              </svg>
+
+            </div>
+            <div class="free_img usp_decor_hand usp_decor_hand_hidden" id="handImg">
+              <img src="/img/general/hand.png" alt="">
+            </div>
+          </div>
+          <div class="usp_arrow">
+            <div class="free_img">
+              <a href="#partners" class="usp_arrow_img"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="partners" id="partners">
+      <div class="textHeader">
+        <img src="/img/general/goldStarsLeft.png" alt="">
+        <div class="goldTexture">
+          Партнеры
+        </div>
+        <img src="/img/general/goldStarsRight.png" alt="">
+      </div>
+      <div class="partnerSliderRight">
+        <div class="partnerSliderRight_element">
+          <img src="/img/partners/left/1.svg" alt="">
+        </div>
+        <div class="partnerSliderRight_element">
+          <img src="/img/partners/left/2.svg" alt="">
+        </div>
+        <div class="partnerSliderRight_element">
+          <img src="/img/partners/left/3.svg" alt="">
+        </div>
+        <div class="partnerSliderRight_element">
+          <img src="/img/partners/left/4.svg" alt="">
+        </div>
+        <div class="partnerSliderRight_element">
+          <img src="/img/partners/left/5.svg" alt="">
+        </div>
+        <div class="partnerSliderRight_element">
+          <img src="/img/partners/left/6.svg" alt="">
+        </div>
+      </div>
+      <div class="partnerSliderLeft">
+        <div class="partnerSliderLeft_element">
+          <img src="/img/partners/right/1.svg" alt="">
+        </div>
+        <div class="partnerSliderLeft_element">
+          <img src="/img/partners/right/2.svg" alt="">
+        </div>
+        <div class="partnerSliderLeft_element">
+          <img src="/img/partners/right/3.svg" alt="">
+        </div>
+        <div class="partnerSliderLeft_element">
+          <img src="/img/partners/right/4.svg" alt="">
+        </div>
+        <div class="partnerSliderLeft_element">
+          <img src="/img/partners/right/5.svg" alt="">
+        </div>
+        <div class="partnerSliderLeft_element">
+          <img src="/img/partners/right/6.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="ourValues">
+      <div class="textHeader">
+        <img src="/img/general/goldStarsLeft.png" alt="">
+        <div class="goldTexture">
+          Наши
+          ценности
+        </div>
+        <img src="/img/general/goldStarsRight.png" alt="">
+      </div>
+      <div class="ourValues_list">
+        <div class="ourValues_element">
+          <img src="/img/general/arrowRightTop.svg" alt="">
+          <div class="ourValues_element_text">Прозрачность</div>
+        </div>
+        <div class="ourValues_element">
+          <img src="/img/general/arrowRightTop.svg" alt="">
+          <div class="ourValues_element_text">Партнёрство</div>
+        </div>
+        <div class="ourValues_element">
+          <img src="/img/general/arrowRightTop.svg" alt="">
+          <div class="ourValues_element_text">Уважение</div>
+        </div>
+      </div>
+    </div>
+    <div class="mediaBuying">
+      <div class="container">
+        <div class="mediaBuying_header">
+          <div class="mediaBuying_header_firstRow">
+            Медиабаинг
+          </div>
+          <div class="mediaBuying_header_secondRow">
+            в соцсетях
+          </div>
+        </div>
+        <div class="mediaBuying_decor">
+          <div class="free_img">
+            <img src="/img/general/light1.svg" alt="">
+          </div>
+        </div>
+        <div class="mediaBuying_text">
+          Наша опытная команда медиабаинга предоставляет широкий спектр услуг по продвижению приложений на самых
+          популярных
+          рекламных платформах и в социальных сетях.
+        </div>
+      </div>
+    </div>
+    <div class="trafic">
+      <div class="textHeader">
+        <img src="/img/general/goldStarsLeft.png" alt="">
+        <div class="goldTexture">Источники трафика
+        </div>
+        <img src="/img/general/goldStarsRight.png" alt="">
+      </div>
+      <div class="container trafic_content">
+        <div class="trafic_content_text">
+          <div class="trafic_content_text_header">
+            Только лучшие источники трафика и премиальный in-app инвентарь. Никакого фрода!
+          </div>
+          <div class="trafic_content_text_p">
+            Мы работаем со всеми ведущими рекламными платформами, и успели не только накопить колоссальную экспертизу по
+            каждой из них, но и получили статус их официальных партнеров и реселлеров.
+          </div>
+          <div class="trafic_content_text_p">
+            Наша команда постоянно находится в поиске новых возможностей, поэтому список источников трафика регулярно
+            пополняется.
+          </div>
+        </div>
+        <div class="trafic_content_img">
+          <img src="/img/general/sources.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="cases">
+      <div class="textHeader">
+        <img src="/img/general/goldStarsLeft.png" alt="">
+        <div class="goldTexture">Кейсы
+        </div>
+        <img src="/img/general/goldStarsRight.png" alt="">
+      </div>
+      <div class="container">
+        <div class="cases_nav">
+          <div class="cases_nav_element" id="casesSelectorMM">
+            <div class="cases_nav_element_imgs">
+              <div class="free_img">
+                <img src="/img/cases/wrapper.png" class="cases_nav_element_imgs_wrapper" alt="">
+              </div>
+              <div class="free_img">
+                <img src="/img/cases/mmSmall.png" class="cases_nav_element_imgs_content" alt="">
+              </div>
+            </div>
+            <div class="cases_nav_element_text">
+              МегаМаркет
+            </div>
+          </div>
+          <div class="cases_nav_element" id="casesSelectorOKKO">
+            <div class="cases_nav_element_imgs">
+              <div class="free_img">
+                <img src="/img/cases/wrapper.png" class="cases_nav_element_imgs_wrapper" alt="">
+              </div>
+              <div class="free_img">
+                <img src="/img/cases/okkoSmall.png" class="cases_nav_element_imgs_content" alt="">
+              </div>
+            </div>
+            <div class="cases_nav_element_text">
+              Okko
+            </div>
+          </div>
+          <div class="cases_nav_element" id="casesSelectorTKF">
+            <div class="cases_nav_element_imgs">
+              <div class="free_img">
+                <img src="/img/cases/wrapper.png" class="cases_nav_element_imgs_wrapper" alt="">
+              </div>
+              <div class="free_img">
+                <img src="/img/cases/tkfSmall.png" class="cases_nav_element_imgs_content" alt="">
+              </div>
+            </div>
+            <div class="cases_nav_element_text">
+              Тинькофф
+            </div>
+          </div>
+          <div class="cases_nav_element">
+            <div class="cases_nav_element_imgs">
+              <div class="free_img">
+                <img src="/img/cases/wrapper.png" class="cases_nav_element_imgs_wrapper" alt="">
+              </div>
+              <div class="free_img">
+                <img src="/img/cases/ygSmall.png" class="cases_nav_element_imgs_content" alt="">
+              </div>
+            </div>
+            <div class="cases_nav_element_text">
+              Яндекс GO
+            </div>
+          </div>
+          <div class="cases_nav_element" id="casesSelectorALF">
+            <div class="cases_nav_element_imgs">
+              <div class="free_img">
+                <img src="/img/cases/wrapper.png" class="cases_nav_element_imgs_wrapper" alt="">
+              </div>
+              <div class="free_img">
+                <img src="/img/cases/alfSmall.png" class="cases_nav_element_imgs_content" alt="">
+              </div>
+            </div>
+            <div class="cases_nav_element_text">
+              Альфа Интвестиции
+            </div>
+          </div>
+          <div class="cases_nav_element" id="casesSelectorTT">
+            <div class="cases_nav_element_imgs">
+              <div class="free_img">
+                <img src="/img/cases/wrapper.png" class="cases_nav_element_imgs_wrapper" alt="">
+              </div>
+              <div class="free_img">
+                <img src="/img/cases/ttSmall.png" class="cases_nav_element_imgs_content" alt="">
+              </div>
+            </div>
+            <div class="cases_nav_element_text">
+              TUTU
+            </div>
+          </div>
+        </div>
+        <div class="cases_content">
+          <div class="free_img cases_content_loader">
+            <img src="/img/cases/loader.svg" alt="">
+          </div>
+          <div class="free_img cases_content_inner">
+            <img src="/img/cases/0.png" id="casesImg" alt="">
+          </div>
+          <div class="free_img cases_content_phone">
+            <img src="/img/cases/phone.png" alt="">
+          </div>
+        </div>
+        <div class="cases_nav">
+          <div class="cases_nav_element">
+            <div class="cases_nav_element_imgs">
+              <div class="free_img">
+                <img src="/img/cases/wrapper.png" class="cases_nav_element_imgs_wrapper" alt="">
+              </div>
+              <div class="free_img">
+                <img src="/img/cases/idSmall.png" class="cases_nav_element_imgs_content" alt="">
+              </div>
+            </div>
+            <div class="cases_nav_element_text">
+              Indrive
+            </div>
+          </div>
+          <div class="cases_nav_element">
+            <div class="cases_nav_element_imgs">
+              <div class="free_img">
+                <img src="/img/cases/wrapper.png" class="cases_nav_element_imgs_wrapper" alt="">
+              </div>
+              <div class="free_img">
+                <img src="/img/cases/mgnSmall.png" class="cases_nav_element_imgs_content" alt="">
+              </div>
+            </div>
+            <div class="cases_nav_element_text">
+              Магнит
+            </div>
+          </div>
+          <div class="cases_nav_element">
+            <div class="cases_nav_element_imgs">
+              <div class="free_img">
+                <img src="/img/cases/wrapper.png" class="cases_nav_element_imgs_wrapper" alt="">
+              </div>
+              <div class="free_img">
+                <img src="/img/cases/fwSmall.png" class="cases_nav_element_imgs_content" alt="">
+              </div>
+            </div>
+            <div class="cases_nav_element_text">
+              Flowwow
+            </div>
+          </div>
+          <div class="cases_nav_element" id="casesSelectorLT">
+            <div class="cases_nav_element_imgs">
+              <div class="free_img">
+                <img src="/img/cases/wrapper.png" class="cases_nav_element_imgs_wrapper" alt="">
+              </div>
+              <div class="free_img">
+                <img src="/img/cases/ltSmall.png" class="cases_nav_element_imgs_content" alt="">
+              </div>
+            </div>
+            <div class="cases_nav_element_text">
+              Level Travel
+            </div>
+          </div>
+          <div class="cases_nav_element" id="casesSelectorBR">
+            <div class="cases_nav_element_imgs">
+              <div class="free_img">
+                <img src="/img/cases/wrapper.png" class="cases_nav_element_imgs_wrapper" alt="">
+              </div>
+              <div class="free_img">
+                <img src="/img/cases/bkSmall.png" class="cases_nav_element_imgs_content" alt="">
+              </div>
+            </div>
+            <div class="cases_nav_element_text">
+              Банки.ру
+            </div>
+          </div>
+          <div class="cases_nav_element">
+            <div class="cases_nav_element_imgs">
+              <div class="free_img">
+                <img src="/img/cases/wrapper.png" class="cases_nav_element_imgs_wrapper" alt="">
+              </div>
+              <div class="free_img">
+                <img src="/img/cases/keSmall.png" class="cases_nav_element_imgs_content" alt="">
+              </div>
+            </div>
+            <div class="cases_nav_element_text">
+              Kazan Express
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="partners partners_second">
+      <div class="partnerSliderLeft">
+        <div class="partnerSliderLeft_element">
+          <img src="/img/partners/right/1.svg" alt="">
+        </div>
+        <div class="partnerSliderLeft_element">
+          <img src="/img/partners/right/2.svg" alt="">
+        </div>
+        <div class="partnerSliderLeft_element">
+          <img src="/img/partners/right/3.svg" alt="">
+        </div>
+        <div class="partnerSliderLeft_element">
+          <img src="/img/partners/right/4.svg" alt="">
+        </div>
+        <div class="partnerSliderLeft_element">
+          <img src="/img/partners/right/5.svg" alt="">
+        </div>
+        <div class="partnerSliderLeft_element">
+          <img src="/img/partners/right/6.svg" alt="">
+        </div>
+      </div>
+      <div class="partnerSliderRight">
+        <div class="partnerSliderRight_element">
+          <img src="/img/partners/left/1.svg" alt="">
+        </div>
+        <div class="partnerSliderRight_element">
+          <img src="/img/partners/left/2.svg" alt="">
+        </div>
+        <div class="partnerSliderRight_element">
+          <img src="/img/partners/left/3.svg" alt="">
+        </div>
+        <div class="partnerSliderRight_element">
+          <img src="/img/partners/left/4.svg" alt="">
+        </div>
+        <div class="partnerSliderRight_element">
+          <img src="/img/partners/left/5.svg" alt="">
+        </div>
+        <div class="partnerSliderRight_element">
+          <img src="/img/partners/left/6.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="contacts">
+      <div class="textHeader">
+        <img src="/img/general/goldStarsLeft.png" alt="">
+        <div class="goldTexture">Контакты
+        </div>
+        <img src="/img/general/goldStarsRight.png" alt="">
+      </div>
+      <div class="container">
+        <div class="contacts_inputBlock">
+          <div class="contacts_label">
+            Имя
+          </div>
+          <input type="text" name="name" placeholder="Введите Ваше имя">
+        </div>
+        <div class="contacts_inputBlock">
+          <div class="contacts_label">
+            Фамилия
+          </div>
+          <input type="text" name="surname" placeholder="Введите Вашу фамилию">
+        </div>
+        <div class="contacts_inputBlock">
+          <div class="contacts_label">
+            Email
+          </div>
+          <input type="email" name="email" placeholder="Введите Ваш Email">
+        </div>
+        <div class="contacts_inputBlock">
+          <div class="contacts_label">
+            Номер телефона
+          </div>
+          <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона">
+        </div>
+        <div class="contacts_inputBlock_large">
+          <div class="contacts_label">
+            Сообщение
+          </div>
+          <textarea name="message" id="" rows="5" placeholder="Введите Ваше сообщение"></textarea>
+        </div>
+        <div class="contacts_confirmAndSendBlock">
+          <div class="contacts_confirm">
+            <div class="contacts_confirm_cb" id="termsConfirmChanger">
+              <div class="contacts_confirm_cb_inner" id="termsConfirm">
+
+              </div>
+            </div>
+            <div class="contacts_confirm_text">
+
+              Я согласен/согласна с <a href="#">Политикой Конфиденциальности</a>
+              и даю согласие на обработку персональных данных
+            </div>
+          </div>
+          <button class="contacts_send">
+            ОТПРАВИТЬ
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer ">
+      <div class="container">
+        <div class="footer_links footer_mob">
+          <a href="#" class="footer_links_element">
+            <img src="/img/general/goldMail.png" alt="">
+            hello@squareup.com
+          </a>
+          <a href="#" class="footer_links_element">
+            <img src="/img/general/goldPhone.png" alt="">
+            +91 91813 23 2309
+          </a>
+          <a href="#" class="footer_links_element">
+            © 2023 SquareUp. All rights reserved.
+          </a>
+        </div>
+        <div class="footer_logo footer_large">
+          <img src="/img/general/logo.png" alt="">
+        </div>
+        <div class="footer_links footer_large">
+          <a href="#" class="footer_links_element">
+            О нас
+          </a>
+          <a href="#" class="footer_links_element">
+            Услуги
+          </a>
+          <a href="#" class="footer_links_element">
+            Кейсы
+          </a>
+          <a href="#" class="footer_links_element">
+            Контакты
+          </a>
+        </div>
+
+        <div class="footer_media footer_large">
+          <a href="#" class="footer_media_element">
+            <img src="/img/mediaLogos/fb.png" alt="">
+          </a>
+          <a href="#" class="footer_media_element">
+            <img src="/img/mediaLogos/ig.png" alt="">
+          </a>
+          <a href="#" class="footer_media_element">
+            <img src="/img/mediaLogos/tg.png" alt="">
+          </a>
+          <a href="#" class="footer_media_element">
+            <img src="/img/mediaLogos/li.png" alt="">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footerUnder footer_large">
+      <div class="container">
+        <div class="footerUnder_info">
+          @2024 СмартФокус. Все права защищены.
+        </div>
+        <div class="footerUnder_info">
+          Версия 1.0
+        </div>
+        <div class="footerUnder_links">
+          <a href="#" class="footerUnder_links_element">
+            Privacy Policy
+          </a>
+          <a href="#" class="footerUnder_links_element">
+            Terms & Conditions
+          </a>
+          <a href="#" class="footerUnder_links_element">
+            Cookie Policy
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

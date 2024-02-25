@@ -1,0 +1,98 @@
+.mediaBuying {
+    .container {
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        @media(max-width: 1350px) {
+            flex-wrap: wrap;
+            align-content: center;
+            height: auto;
+            padding: 60px 0px;
+        }
+    }
+
+    &_decor {
+        .free_img {
+            z-index: -1;
+
+            img {
+                max-width: 100dvw;
+            }
+        }
+
+        @media(max-width: 1350px) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &_header {
+        width: 50%;
+
+        @media(max-width: 1350px) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &_firstRow,
+        &_secondRow {
+            font-size: 100px;
+            line-height: 90px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(154, 101, 54, 1) 100%);
+            -webkit-background-clip: text;
+            background-size: 100%;
+            background-clip: text;
+            color: transparent;
+            text-fill-color: transparent;
+
+            @media(max-width: 1350px) {
+                width: 100%;
+                text-align: center;
+            }
+
+            @media(max-width: 700px) {
+                font-size: 60px;
+                line-height: 50px;
+            }
+
+            @media(max-width: 400px) {
+                font-size: 40px;
+                line-height: 35px;
+            }
+        }
+
+        &_firstRow {
+            font-weight: 300;
+        }
+
+        &_secondRow {
+            font-weight: 500;
+        }
+
+    }
+
+    &_text {
+        width: 50%;
+        font-size: 28px;
+
+        @media(max-width: 1350px) {
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        @media(max-width: 700px) {
+            font-size: 24px;
+        }
+
+        @media(max-width: 400px) {
+            font-size: 20px;
+        }
+    }
+}

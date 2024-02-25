@@ -1,0 +1,187 @@
+.contacts {
+    &_confirmAndSendBlock {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+
+        @media(max-width: 1100px) {
+            justify-content: center;
+        }
+    }
+
+    &_send {
+        width: 260px;
+        height: 80px;
+        background-image: url("/img/general/goldTexture.webp");
+        border-radius: 12px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: black;
+        font-size: 24px;
+        font-weight: 600;
+        transition: 200ms background-size;
+    }
+
+    &_send:hover {
+        cursor: pointer;
+        width: 260px;
+        height: 80px;
+        background-image: url("/img/general/goldTexture.webp");
+        border-radius: 12px;
+        background-size: 120%;
+        background-repeat: no-repeat;
+        color: black;
+        font-weight: 600;
+    }
+
+    &_confirm {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media(max-width: 1100px) {
+            width: 100%;
+            justify-content: center;
+        }
+
+        &_text {
+            font-size: 20px;
+            font-weight: 500;
+            max-width: 700px;
+
+            @media(max-width: 500px) {
+                font-size: 16px;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        &_cb {
+            min-width: 36px;
+            height: 36px;
+            border-radius: 6px;
+            border: 1px solid #FFB61D33;
+            background-color: #1A1A1A88;
+            transition: 200ms background-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &_inner {
+                width: 24px;
+                height: 24px;
+                border-radius: 6px;
+                background: #FFB61D88;
+            }
+        }
+
+        &_cb:hover {
+            cursor: pointer;
+            background-color: #1A1A1A;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        gap: 60px;
+
+        @media(max-width: 1000px) {
+            gap: 30px;
+        }
+    }
+
+    &_inputBlock {
+        width: calc(50% - 30px);
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 16px;
+
+        @media(max-width: 1000px) {
+            width: 100%;
+        }
+
+        &_large {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 16px;
+
+
+            textarea {
+                width: 100%;
+            }
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
+    textarea,
+    input {
+        background: #1A1A1A88;
+        border: 1px solid #FFB61D33;
+        box-shadow: 0 0 0 1px #FFB61D33,
+            0 0 0 5px #1A1A1A88;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 26px;
+        border-radius: 10px;
+        color: white;
+
+        @media(max-width: 550px) {
+            font-size: 18px;
+            padding: 16px;
+        }
+    }
+
+    &_label {
+        font-size: 24px;
+        font-weight: 600;
+
+        @media(max-width: 550px) {
+            font-size: 18px;
+        }
+    }
+
+    .iti__selected-flag {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100px;
+        // padding: 0 6px 0 8px;
+
+        background: #1A1A1A88;
+        border: 1px solid #FFB61D33;
+        box-shadow: 0 0 0 1px #FFB61D33,
+            0 0 0 5px #1A1A1A88;
+        font-size: 24px;
+        font-weight: 600;
+        // padding: 26px;
+        border-radius: 10px;
+        color: white;
+        gap: 20px;
+    }
+
+    .iti__flag {
+        transform: scale(1.5);
+    }
+
+    .iti__arrow {
+        width: 10px;
+        height: 10px;
+        transform: rotate(-45deg);
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+    }
+}
