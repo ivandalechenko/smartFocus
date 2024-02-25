@@ -115,6 +115,7 @@
         &_element {
             font-size: 20px;
             font-weight: 600;
+            transition: 200ms color;
 
             img {
                 display: none;
@@ -132,6 +133,16 @@
                     width: 25px;
                 }
             }
+
+            &_selected {
+                color: #FFB61D;
+            }
+        }
+
+        &_element:hover {
+            font-size: 20px;
+            font-weight: 600;
+            color: #FFB61D;
         }
 
     }

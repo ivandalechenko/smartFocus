@@ -2,12 +2,12 @@ document.getElementById('mmOpener').onclick = () => {
     if (document.getElementById('mm').classList.contains('header_open')) {
         document.getElementById('mmOpenerImg').style.transform = 'rotate(0deg)';
         setTimeout(() => {
-            document.getElementById('mmOpenerImg').src = '/img/mobMenuOpener.svg';
+            document.getElementById('mmOpenerImg').src = '/img/general/mobMenuOpener.svg';
         }, 250);
     } else {
         document.getElementById('mmOpenerImg').style.transform = 'rotate(360deg)';
         setTimeout(() => {
-            document.getElementById('mmOpenerImg').src = '/img/mobMenuCloser.svg';
+            document.getElementById('mmOpenerImg').src = '/img/general/mobMenuCloser.svg';
         }, 250);
     }
     document.getElementById('mm').classList.toggle('header_open')

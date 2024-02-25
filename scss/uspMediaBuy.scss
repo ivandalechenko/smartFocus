@@ -1,0 +1,81 @@
+.uspMediaBuy {
+    .container {
+        min-height: 100vh;
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+
+        @media(max-width: 1000px) {
+            justify-content: center;
+        }
+    }
+
+    &_text {
+        width: 100%;
+        max-width: 680px;
+
+        @media(max-width: 1000px) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 500px;
+        }
+
+        &_img {
+            display: none;
+
+            @media(max-width: 1000px) {
+                display: block;
+                margin-top: 25px;
+                width: 100%;
+                max-width: 500px;
+            }
+
+        }
+
+        &_header {
+            font-size: 80px;
+            line-height: 75px;
+            letter-spacing: -2px;
+            font-weight: 500;
+
+            @media(max-width: 1300px) {
+                font-size: 50px;
+                line-height: 45px;
+            }
+
+            @media(max-width: 450px) {
+                font-size: 32px;
+                letter-spacing: -1px;
+                line-height: 28px;
+            }
+
+            .goldTexture {
+                font-weight: 200;
+            }
+        }
+
+        &_p {
+            margin-top: 25px;
+            font-size: 24px;
+
+            @media(max-width: 1300px) {
+                font-size: 19px;
+                margin-top: 18px;
+            }
+
+            @media(max-width: 450px) {
+                margin-top: 12px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &_img {
+        @media(max-width: 1000px) {
+            display: none;
+        }
+    }
+}
