@@ -7,8 +7,12 @@ function idEmailValid(email) {
     }
 }
 
-document.getElementById('termsConfirmChanger').onclick = () => {
-    document.getElementById('termsConfirm').classList.toggle('contacts_confirm_cb_inner')
+try {
+    document.getElementById('termsConfirmChanger').onclick = () => {
+        document.getElementById('termsConfirm').classList.toggle('contacts_confirm_cb_inner')
+    }
+} catch (error) {
+
 }
 setTimeout(() => {
     const anchors = document.querySelectorAll('a[href*="#"]')

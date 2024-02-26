@@ -18,13 +18,17 @@
 
 
 
+try {
+    const phoneInput = document.getElementById('phone');
+    window.intlTelInput(phoneInput, {
+        initialCountry: "us",
+        preferredCountries: [],
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        autoPlaceholder: true,
+        formatOnDisplay: true,
+        nationalMode: false
+    });
+} catch (error) {
 
-const input = document.getElementById('phone');
-window.intlTelInput(input, {
-    initialCountry: "us",
-    preferredCountries: [],
-    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    autoPlaceholder: true,
-    formatOnDisplay: true,
-    nationalMode: false
-});
+}
+

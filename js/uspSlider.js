@@ -51,5 +51,9 @@ function uspSliderMove() {
 }
 
 setInterval(() => {
-    uspSliderMove()
+    try {
+        uspSliderMove()
+    } catch (error) {
+
+    }
 }, 4000);

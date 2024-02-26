@@ -1,0 +1,47 @@
+.p404 {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    &_header {
+        font-size: 70px;
+        width: 100%;
+        letter-spacing: -2px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    &_p {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(154, 101, 54, 1) 100%);
+        -webkit-background-clip: text;
+        background-size: 100%;
+        background-clip: text;
+        color: transparent;
+        text-fill-color: transparent;
+        width: auto;
+        font-size: 26px;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    &_home {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 260px;
+        height: 80px;
+        background-image: url(/img/general/goldTexture.webp);
+        border-radius: 12px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: black;
+        font-size: 24px;
+        font-weight: 600;
+        transition: 200ms background-size;
+    }
+}

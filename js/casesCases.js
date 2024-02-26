@@ -1,17 +1,15 @@
 const casesTransition = 400;
 
 try {
-    const casesElements = document.getElementsByClassName('cases_nav_element');
+    const casesElements = document.getElementsByClassName('casesMainNav_element');
     for (let i = 0; i < casesElements.length; i++) {
         casesElements[i].addEventListener('click', () => {
-            const ns = document.getElementsByClassName('cases_nav_element');
+            const ns = document.getElementsByClassName('casesMainNav_element');
             for (let j = 0; j < ns.length; j++) {
-                ns[j].classList.remove('cases_nav_elementSelected')
+                ns[j].classList.remove('casesMainNav_element_selected')
             }
         })
     }
-
-
     const selectorElements = [
         {
             name: 'mm',
@@ -124,20 +122,88 @@ try {
             ]
         },
     ]
-    for (let i = 0; i < selectorElements.length; i++) {
 
+
+    for (let i = 0; i < selectorElements.length; i++) {
         document.getElementById(`casesSelector_${selectorElements[i].name}`).addEventListener('click', () => {
-            document.getElementById(`casesSelector_${selectorElements[i].name}`).classList.add('cases_nav_elementSelected')
+            document.getElementById(`casesSelector_${selectorElements[i].name}`).classList.add('casesMainNav_element_selected')
             document.getElementById('casesImg').style.transition = `${casesTransition}ms opacity`;
             document.getElementById('casesImg').style.opacity = '0';
+            document.getElementById('casesIcon').style.transition = `${casesTransition}ms opacity`;
+            document.getElementById('casesIcon').style.opacity = '0';
+            document.getElementById('casesIconMob').style.transition = `${casesTransition}ms opacity`;
+            document.getElementById('casesIconMob').style.opacity = '0';
+
+            document.getElementById('casesFullName').style.transition = `${casesTransition}ms opacity`;
+            document.getElementById('casesFullNameMob').style.transition = `${casesTransition}ms opacity`;
+            document.getElementById('casesFullName').style.opacity = `0`;
+            document.getElementById('casesFullNameMob').style.opacity = `0`;
+            setTimeout(() => {
+                document.getElementById('casesFullName').innerHTML = selectorElements[i].fullName
+                document.getElementById('casesFullNameMob').innerHTML = selectorElements[i].fullName
+                document.getElementById('casesFullName').style.opacity = `1`;
+                document.getElementById('casesFullNameMob').style.opacity = `1`;
+            }, casesTransition);
+
+            document.getElementById('casesDescription').style.transition = `${casesTransition}ms opacity`;
+            document.getElementById('casesDescriptionMob').style.transition = `${casesTransition}ms opacity`;
+            document.getElementById('casesDescription').style.opacity = `0`;
+            document.getElementById('casesDescriptionMob').style.opacity = `0`;
+            setTimeout(() => {
+                document.getElementById('casesDescription').innerHTML = selectorElements[i].description
+                document.getElementById('casesDescriptionMob').innerHTML = selectorElements[i].description
+                document.getElementById('casesDescription').style.opacity = `1`;
+                document.getElementById('casesDescriptionMob').style.opacity = `1`;
+            }, casesTransition);
+
+            document.getElementById('casesStat').style.transition = `${casesTransition}ms opacity`;
+            document.getElementById('casesStat').style.opacity = `0`;
+
+            setTimeout(() => {
+                let newStat = ''
+                for (let j = 0; j < selectorElements[i].stat.length; j++) {
+                    newStat = newStat + `<div class="casesMain_stat_element">
+                    <div class="casesMain_stat_element_header goldTexture">
+                        ${selectorElements[i].stat[j].l}
+                        </div>
+                        <div class="casesMain_stat_element_p">
+                        ${selectorElements[i].stat[j].s}
+                    </div>
+                </div>`
+                }
+                document.getElementById('casesStat').innerHTML = newStat
+                setTimeout(() => {
+                    document.getElementById('casesStat').style.opacity = `1`;
+                }, 100);
+            }, casesTransition);
+
+
+            setTimeout(() => {
+                document.getElementById('casesDescription').innerHTML = selectorElements[i].description
+                document.getElementById('casesDescriptionMob').innerHTML = selectorElements[i].description
+            }, casesTransition);
+
+
+
             setTimeout(() => {
                 document.getElementById('casesImg').src = `/img/cases/${selectorElements[i].name}.png`;
                 document.getElementById('casesImg').onload = () => {
                     document.getElementById('casesImg').style.opacity = '1';
                 }
+                document.getElementById('casesIcon').src = `/img/cases/${selectorElements[i].name}Small.png`;
+                document.getElementById('casesIcon').onload = () => {
+                    document.getElementById('casesIcon').style.opacity = '1';
+                }
+                document.getElementById('casesIconMob').src = `/img/cases/${selectorElements[i].name}Small.png`;
+                document.getElementById('casesIconMob').onload = () => {
+                    document.getElementById('casesIconMob').style.opacity = '1';
+                }
             }, casesTransition);
         });
     }
+
+
+
 
 } catch (error) {
 
