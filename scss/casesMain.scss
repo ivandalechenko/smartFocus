@@ -1,6 +1,6 @@
 .casesMain {
     min-height: 100vh;
-    padding-top: 60px;
+    padding-top: 30px;
 
     @media(max-width: 1000px) {
         padding-top: 120px;
@@ -16,20 +16,19 @@
         }
 
         .goldTexture {
-            font-size: 130px;
+            font-size: 90px;
         }
     }
 
     .container {
         display: flex;
-        height: 920px;
+        min-height: 600px;
         align-items: center;
         align-content: center;
         gap: 140px;
-        margin-top: 90px;
 
         @media(max-width: 1400px) {
-            height: 770px;
+            min-height: 770px;
             margin-top: 0px;
         }
 
@@ -38,16 +37,16 @@
         }
 
         @media(max-width: 600px) {
-            height: 500px;
+            min-height: 500px;
             gap: 10px;
         }
 
         @media(max-width: 500px) {
-            height: 370px;
+            min-height: 370px;
         }
 
         @media(max-width: 390px) {
-            height: 300px;
+            min-height: 300px;
         }
     }
 
@@ -66,11 +65,7 @@
 
         &_phone {
             img {
-                width: 630px;
-
-                @media(max-width: 1400px) {
-                    width: 495px;
-                }
+                width: 440px;
 
                 @media(max-width: 600px) {
                     width: 345px;
@@ -90,11 +85,7 @@
         &_loader {
 
             img {
-                width: 420px;
-
-                @media(max-width: 1400px) {
-                    width: 331px;
-                }
+                width: 292px;
 
                 @media(max-width: 600px) {
                     width: 232px;
@@ -238,15 +229,15 @@
             }
 
             &_header {
-                font-size: 70px;
+                font-size: 50px;
                 font-weight: 600;
 
                 @media(max-width: 1200px) {
-                    font-size: 60px;
+                    font-size: 40px;
                 }
 
                 @media(max-width: 700px) {
-                    font-size: 50px;
+                    font-size: 35px;
                 }
 
                 @media(max-width: 500px) {
@@ -255,15 +246,15 @@
             }
 
             &_p {
-                font-size: 24px;
+                font-size: 18px;
                 font-weight: 600;
 
                 @media(max-width: 1200px) {
-                    font-size: 20px;
+                    font-size: 16px;
                 }
 
                 @media(max-width: 700px) {
-                    font-size: 18px;
+                    font-size: 14px;
                 }
             }
         }
@@ -278,7 +269,7 @@
     }
 
     &_additional {
-        font-size: 32px;
+        font-size: 24px;
 
         @media(max-width: 1000px) {
             display: none;

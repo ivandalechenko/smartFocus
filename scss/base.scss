@@ -2,7 +2,11 @@
     width: 100%;
     max-width: 1460px;
     margin: 0px auto;
-    padding: 0px 15px;
+    padding: 0px 60px;
+
+    @media(max-width: 1200px) {
+        padding: 0px 15px;
+    }
 }
 
 #usp {
@@ -28,8 +32,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     margin-top: 60px;
+
+    img {
+        width: 70px;
+    }
 
     @media(max-width: 900px) {
         gap: 20px;
@@ -41,9 +49,8 @@ body {
 
     .goldTexture {
         font-weight: 500;
-        font-size: 72px;
         background-size: 200%;
-        font-size: 72px;
+        font-size: 56px;
         text-align: center;
 
         @media(max-width: 900px) {
@@ -63,8 +70,15 @@ body {
     width: 100%;
     overflow: hidden;
     z-index: -2;
+}
 
-    img {
-        width: 100dvw;
-    }
+#bg {
+    transition: 500ms opacity;
+    opacity: 0;
+}
+
+.lightRight {
+    width: 100%;
+    justify-content: right;
+    display: flex;
 }

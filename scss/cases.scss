@@ -3,7 +3,7 @@
 
 
     .container {
-        margin-top: 160px;
+        margin-top: 90px;
         display: flex;
         justify-content: center;
 
@@ -67,8 +67,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 155px;
-                height: 155px;
+                width: 130px;
+                height: 130px;
 
                 @media(max-width: 1200px) {
                     width: 110px;
@@ -81,8 +81,8 @@
                 }
 
                 &_wrapper {
-                    width: 155px;
-                    height: 155px;
+                    width: 130px;
+                    height: 130px;
                     transition: 150ms transform;
 
                     @media(max-width: 1200px) {
@@ -97,9 +97,8 @@
                 }
 
                 &_content {
-                    width: 137px;
-                    height: 137px;
-                    border-radius: 36px;
+                    width: 115px;
+                    height: 115px;
                     transition: 150ms transform;
 
                     @media(max-width: 1200px) {
@@ -124,7 +123,7 @@
                 background-clip: text;
                 color: transparent;
                 text-fill-color: transparent;
-                font-size: 21px;
+                font-size: 18px;
                 font-weight: 600;
 
                 @media(max-width: 1200px) {
@@ -137,7 +136,7 @@
                     font-size: 12px;
                 }
 
-                width: 155px;
+                width: 130px;
                 height: 50px;
 
                 @media(max-width: 1200px) {
@@ -192,11 +191,7 @@
 
         &_phone {
             img {
-                width: 630px;
-
-                @media(max-width: 1400px) {
-                    width: 495px;
-                }
+                width: 495px;
 
                 @media(max-width: 1000px) {
                     width: 345px;
@@ -208,11 +203,7 @@
         &_loader {
 
             img {
-                width: 420px;
-
-                @media(max-width: 1400px) {
-                    width: 331px;
-                }
+                width: 331px;
 
                 @media(max-width: 1000px) {
                     width: 232px;

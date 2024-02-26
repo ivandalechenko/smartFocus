@@ -3,7 +3,7 @@
     overflow: hidden;
 
     &_list {
-        margin-top: 60px;
+        margin-top: 30px;
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
@@ -18,9 +18,9 @@
     }
 
     &_element {
-        height: 190px;
+        height: 140px;
         width: 100%;
-        max-width: 470px;
+        max-width: 400px;
         background-image: url('/img/general/goldTexture.webp');
         padding: 0px 40px;
         border-radius: 12px;
@@ -30,7 +30,7 @@
         align-items: center;
         flex-wrap: wrap;
         align-content: center;
-        gap: 20px;
+        gap: 10px;
 
         @media(max-width: 550px) {
             border-radius: 4px;
@@ -44,7 +44,7 @@
         }
 
         &_text {
-            font-size: 50px;
+            font-size: 40px;
             width: 100%;
             font-weight: 600;
             color: black;

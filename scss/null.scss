@@ -142,3 +142,7 @@ textarea:focus {
     max-height: 100dvh !important;
     overflow: hidden;
 }
+
+svg:not(:root) {
+    overflow: visible;
+}

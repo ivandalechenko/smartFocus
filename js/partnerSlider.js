@@ -1,20 +1,8 @@
 try {
-    let gap;
-    if (document.documentElement.scrollWidth < 1200) {
-        gap = 0;
-    } else {
-        gap = 70;
-    }
+    let gap = 20;
+
     let scale = '';
     const timingMs = 100000
-
-    window.addEventListener('resize', function () {
-        if (document.documentElement.scrollWidth < 1200) {
-            gap = 0;
-        } else {
-            gap = 70;
-        }
-    });
 
 
     const PSSR = document.getElementsByClassName('partnerSliderRight')
