@@ -6,6 +6,7 @@
     empty-cells: hide;
 
     @media(max-width: 1200px) {
+        empty-cells: hide;
         padding: 0px 15px;
     }
 }
