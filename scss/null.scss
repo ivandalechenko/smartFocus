@@ -96,6 +96,7 @@ video,
 button {
     margin: 0;
     padding: 0;
+    empty-cells: hide;
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -107,10 +108,12 @@ button {
 
 .dnone {
     display: none;
+    empty-cells: hide;
 }
 
 a {
     text-decoration: none;
+    empty-cells: hide;
 }
 
 input,
@@ -131,18 +134,17 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    empty-cells: hide;
     position: relative;
 }
 
 .onone {
     opacity: 0;
+    empty-cells: hide;
 }
 
 .h100 {
     max-height: 100dvh !important;
     overflow: hidden;
-}
-
-svg:not(:root) {
-    overflow: visible;
+    empty-cells: hide;
 }

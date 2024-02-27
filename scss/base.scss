@@ -3,6 +3,7 @@
     max-width: 1460px;
     margin: 0px auto;
     padding: 0px 60px;
+    empty-cells: hide;
 
     @media(max-width: 1200px) {
         padding: 0px 15px;
@@ -11,10 +12,12 @@
 
 #usp {
     transition: 200ms opacity;
+    empty-cells: hide;
 }
 
 body {
     background: #0F1011;
+    empty-cells: hide;
 }
 
 .goldTexture {
@@ -25,6 +28,7 @@ body {
     background-clip: text;
     color: transparent;
     text-fill-color: transparent;
+    empty-cells: hide;
 }
 
 .textHeader {
@@ -62,6 +66,7 @@ body {
 .app {
     width: 100%;
     overflow: hidden;
+    empty-cells: hide;
 }
 
 
@@ -70,15 +75,37 @@ body {
     width: 100%;
     overflow: hidden;
     z-index: -2;
+    empty-cells: hide;
 }
 
 #bg {
     transition: 500ms opacity;
     opacity: 0;
+    empty-cells: hide;
 }
 
 .lightRight {
-    width: 100%;
     justify-content: right;
+}
+
+img,
+svg {
+    opacity: 0;
+    transition: 1000ms opacity;
+    empty-cells: hide;
+}
+
+.lightLeft,
+.lightRight {
+    width: 100dvw;
     display: flex;
+    empty-cells: hide;
+    position: relative;
+    z-index: -1;
+    // overflow-y: hidden;
+    // display: none;
+
+    img {
+        opacity: 1 !important;
+    }
 }
